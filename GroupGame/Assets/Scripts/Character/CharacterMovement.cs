@@ -66,8 +66,7 @@ public class CharacterMovement : MonoBehaviour
 
         //Rotate the character
         rotationX = transform.localEulerAngles.y + Input.GetAxis("Mouse X") * rotateSpeed;
-        rotationY -= Input.GetAxis("Mouse Y") * rotateSpeed;
-        transform.localEulerAngles = new Vector3(rotationY, rotationX, 0);
+        transform.localEulerAngles = new Vector3(0, rotationX, 0);
 
 
         /********** 2D Plane Movement **********/
